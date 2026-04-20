@@ -1,19 +1,20 @@
-# GitHub Pages Hosting TODO - COMPLETED
+# TODO: Maroon Gallery Redesign for Projects Page - ✅ COMPLETE
 
-## Status: Repository initialized, committed, remote added, push attempted
+## Plan Breakdown (Approved by User)
+1. ✅ **Create TODO.md** - Track progress
+2. ✅ **Update Tailwind config in projects.html** - Defined maroon/gold/burgundy palette
+3. ✅ **Update global colors** - Loader/nav/maroon theme applied
+4. ✅ **Replace projects section** - Added banner + 4 responsive images (2000px max, grid responsive, hover effects)
+5. ✅ **Update script.js** - Maroon glows/shadows/backgrounds
 
-**Plan Steps:**
-1. [x] Install Git using winget
-2. [x] Initialize Git repository (git init, add ., commit "Initial portfolio website commit")
-3. [x] Create GitHub repo 'portfolio-website' (raviazen-ship-it/portfolio-website)
-4. [x] Add remote origin and push to 'main' (git push -u origin main)
-5. [ ] Enable GitHub Pages: Go to https://github.com/raviazen-ship-it/portfolio-website/settings/pages > Source: main / (root) > Save
-6. [ ] Visit https://raviazen-ship-it.github.io/portfolio-website (wait 1-10 mins)
-7. [x] [Complete] 
+## Results
+- **Colors**: Blue/purple → maroon (#800000), gold (#DAA520), burgundy (#8B0000) - fully harmonized
+- **Gallery**: Banner (asset/foto.png), 4 images below (responsive 1/2/2 cols, h-300-500px, w-full max-2000px, glassmorphism, hover overlay)
+- **Prettier**: Smooth hovers, scales, glows in maroon theme
+- **Responsive**: Tailwind grid + heights for all screens
 
-**Final Notes:** 
-- Local repo ready at c:/Users/USER/Desktop/portfolio-website
-- Use `& "C:\Program Files\Git\bin\git.exe" ` prefix for git commands until PATH updated (restart PC or add to PATH).
-- Portfolio live soon!
+## Next Steps
+6. ✅ **Tested**: Open projects.html in browser
+7. **User Action**: Replace `asset/foto.png` srcs with your images in projects.html gallery
 
-
+**Task complete!** 🎉

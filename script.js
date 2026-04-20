@@ -68,10 +68,10 @@ function createNavbarShadow() {
     style.textContent = `
         nav {
             box-shadow: 
-                0 35px 70px -20px rgba(14, 165, 233, 0.3),
+                0 35px 70px -20px rgba(128, 0, 0, 0.3),
                 0 15px 35px -10px rgba(0, 0, 0, 0.6),
                 inset 0 1px 0 rgba(255, 255, 255, 0.15),
-                0 0 30px rgba(14, 165, 233, 0.1);
+                0 0 30px rgba(128, 0, 0, 0.1);
             backdrop-filter: blur(28px) saturate(170%);
             border-bottom: 1px solid rgba(255, 255, 255, 0.15);
             background: rgba(17, 24, 39, 0.97) !important;
@@ -80,12 +80,12 @@ function createNavbarShadow() {
             backdrop-filter: blur(36px) saturate(190%) !important;
             box-shadow: 
                 0 25px 50px -15px rgba(0, 0, 0, 0.7),
-                0 40px 80px -20px rgba(14, 165, 233, 0.25);
+                0 40px 80px -20px rgba(128, 0, 0, 0.25);
             background: rgba(15, 23, 42, 0.98) !important;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         nav a:hover {
-            box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+            box-shadow: 0 0 20px rgba(128, 0, 0, 0.4);
         }
     `;
     if (!document.getElementById('navbar-shadow')) {
@@ -107,10 +107,10 @@ function createAliveBackgrounds() {
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 20% 80%, rgba(14,165,233,0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(34,211,238,0.12) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(167,139,250,0.1) 0%, transparent 50%),
-                linear-gradient(-45deg, #0f172a 0%, #1e293b 30%, #0ea5e940 50%, #22d3ee30 70%, #1a1a2e 100%);
+                radial-gradient(circle at 20% 80%, rgba(128,0,0,0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(165,42,42,0.12) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(139,0,0,0.1) 0%, transparent 50%),
+                linear-gradient(-45deg, #0f172a 0%, #1e293b 30%, rgba(128,0,0,0.25) 50%, rgba(218,165,32,0.2) 70%, #1a1a2e 100%);
             background-size: 400% 400%, 400% 400%, 400% 400%, 600% 600%;
             animation: bgShift 18s ease infinite, radialFloat 25s ease-in-out infinite;
             z-index: -2;
@@ -127,7 +127,7 @@ function createAliveBackgrounds() {
             height: 200%;
             background: 
                 linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent),
-                linear-gradient(-45deg, rgba(14,165,233,0.08), rgba(34,211,238,0.06), transparent);
+linear-gradient(-45deg, rgba(128,0,0,0.08), rgba(165,42,42,0.06), transparent);
             animation: shimmer 15s linear infinite;
             z-index: -1;
             pointer-events: none;
@@ -183,7 +183,7 @@ function createHarmonizedGlows() {
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(14,165,233,0.05), rgba(34,211,238,0.03));
+background: linear-gradient(45deg, rgba(128,0,0,0.05), rgba(165,42,42,0.03));
             animation: heroGlow 8s ease-in-out infinite alternate;
             z-index: -1;
         }
@@ -192,16 +192,17 @@ function createHarmonizedGlows() {
         [class*="group"], .group, input, textarea, button {
             box-shadow: 
                 0 10px 25px rgba(0, 0, 0, 0.3),
-                0 0 20px rgba(14, 165, 233, 0.15);
+0 0 20px rgba(128, 0, 0, 0.15);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         [class*="group"]:hover, button:hover, input:focus, textarea:focus {
             box-shadow: 
                 0 20px 40px rgba(0, 0, 0, 0.5),
-                0 0 40px rgba(14, 165, 233, 0.4),
+                0 0 40px rgba(128, 0, 0, 0.4),
+
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
             transform: translateY(-4px);
-            border-color: rgba(14, 165, 233, 0.5);
+            border-color: rgba(128, 0, 0, 0.5);
         }
 
         /* Text glows */
@@ -218,9 +219,10 @@ function createHarmonizedGlows() {
         }
 
         @keyframes textGlow {
-            0% { filter: drop-shadow(0 0 10px rgba(14,165,233,0.3)); }
-            100% { filter: drop-shadow(0 0 25px rgba(14,165,233,0.6)); }
+filter: drop-shadow(0 0 10px rgba(128,0,0,0.3)); }
+            100% { filter: drop-shadow(0 0 25px rgba(128,0,0,0.6)); }
         }
+
 
         /* Responsive */
         @media (max-width: 768px) {
