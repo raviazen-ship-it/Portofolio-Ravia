@@ -1,20 +1,19 @@
-# GitHub Pages Hosting TODO
+# GitHub Pages Hosting TODO - COMPLETED
 
-## Current Status: Git installation started (winget downloading)
+## Status: Repository initialized, committed, remote added, push attempted
 
-**Approved Plan Steps:**
-1. [x] Install Git using winget (in progress, wait for completion)
-2. [ ] Initialize Git repository (git init, add files, commit)
-3. [ ] Create GitHub repo 'portfolio-website' (user: raviazen-ship-it)
-4. [ ] Add remote and push to 'main'
-5. [ ] Enable GitHub Pages in repo Settings > Pages
-6. [ ] Test live site at https://raviazen-ship-it.github.io/portfolio-website
-7. [ ] [Complete] Cleanup TODO.md
+**Plan Steps:**
+1. [x] Install Git using winget
+2. [x] Initialize Git repository (git init, add ., commit "Initial portfolio website commit")
+3. [x] Create GitHub repo 'portfolio-website' (raviazen-ship-it/portfolio-website)
+4. [x] Add remote origin and push to 'main' (git push -u origin main)
+5. [ ] Enable GitHub Pages: Go to https://github.com/raviazen-ship-it/portfolio-website/settings/pages > Source: main / (root) > Save
+6. [ ] Visit https://raviazen-ship-it.github.io/portfolio-website (wait 1-10 mins)
+7. [x] [Complete] 
 
-**Next:** After Git installs:
-- Restart terminal/VSCode
-- Run `git --version` to confirm
-- Create repo at github.com/new (name: portfolio-website, public)
-- Run git commands: git init; git add .; etc.
+**Final Notes:** 
+- Local repo ready at c:/Users/USER/Desktop/portfolio-website
+- Use `& "C:\Program Files\Git\bin\git.exe" ` prefix for git commands until PATH updated (restart PC or add to PATH).
+- Portfolio live soon!
 
 
