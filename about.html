@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        neonblue: {
+                            400: '#60a5fa',
+                            500: '#0ea5e9',
+                            600: '#0284c7'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white dark">
+    <div id="loader" class="fixed inset-0 bg-gradient-to-br from-neonblue-600 via-purple-600 to-blue-900 flex items-center justify-center z-50">
+        <div class="animate-spin rounded-full h-20 w-20 border-4 border-white/30 border-t-white"></div>
+    </div>
+    <nav>
+        <div class="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="text-xl md:text-2xl font-black bg-gradient-to-r from-cyan-300 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg">PORTFOLIO WEBSITE</div>
+            
+            <!-- Desktop Navigation Links -->
+            <ul class="hidden md:flex space-x-4 lg:space-x-8">
+                <li><a href="index.html" class="text-white hover:text-neonblue-400 bg-gray-800/50 hover:bg-neonblue-500/20 font-medium rounded-xl text-sm lg:text-base px-4 lg:px-6 py-3 transition-all duration-300">Home</a></li>
+                <li><a href="about.html" class="active-nav text-neonblue-400 bg-neonblue-500/30 font-medium rounded-xl text-sm lg:text-base px-4 lg:px-6 py-3 transition-all duration-300 border-2 border-neonblue-400/50">About</a></li>
+                <li><a href="projects.html" class="text-white hover:text-neonblue-400 bg-gray-800/50 hover:bg-neonblue-500/20 font-medium rounded-xl text-sm lg:text-base px-4 lg:px-6 py-3 transition-all duration-300">Projects</a></li>
+                <li><a href="contact.html" class="text-white hover:text-neonblue-400 bg-gray-800/50 hover:bg-neonblue-500/20 font-medium rounded-xl text-sm lg:text-base px-4 lg:px-6 py-3 transition-all duration-300">Contact</a></li>
+            </ul>
+            
+            <!-- Burger Menu Button (Mobile Only) -->
+            <button id="menu-toggle" class="flex md:hidden items-center justify-center w-10 h-10 text-white hover:text-neonblue-400 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800/95 backdrop-blur-md">
+            <ul class="flex flex-col space-y-2 px-4 py-4">
+                <li><a href="index.html" class="block text-white hover:text-neonblue-400 bg-gray-700/50 hover:bg-neonblue-500/20 font-medium rounded-xl px-4 py-3 transition-all duration-300">Home</a></li>
+                <li><a href="about.html" class="active-nav block text-neonblue-400 bg-neonblue-500/30 font-medium rounded-xl px-4 py-3 transition-all duration-300 border-l-2 border-neonblue-400">About</a></li>
+                <li><a href="projects.html" class="block text-white hover:text-neonblue-400 bg-gray-700/50 hover:bg-neonblue-500/20 font-medium rounded-xl px-4 py-3 transition-all duration-300">Projects</a></li>
+                <li><a href="contact.html" class="block text-white hover:text-neonblue-400 bg-gray-700/50 hover:bg-neonblue-500/20 font-medium rounded-xl px-4 py-3 transition-all duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="min-h-screen">
+        <section class="py-24 px-6">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+                <div class="flex-shrink-0">
+                    <img src="asset/foto.png" alt="Ravia Zen" class="w-96 h-[500px] object-cover rounded-3xl shadow-2xl ring-4 ring-neonblue-500/30 hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex-1 text-center lg:text-left space-y-8">
+                    <h1 class="text-6xl lg:text-7xl font-black bg-gradient-to-r from-cyan-300 to-cyan-400 bg-clip-text text-transparent drop-shadow-2xl">Ravia Zen</h1>
+                    <h3 class="text-3xl lg:text-4xl font-bold text-neonblue-400 drop-shadow-lg">Web Developer & Designer</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed max-w-2xl bg-gray-800/50 backdrop-blur-md p-8 rounded-2xl border border-gray-700/50">Dedicated developer specializing in modern web technologies. Passionate about React, Tailwind CSS, and creating immersive neon-themed digital experiences.</p>
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <span class="bg-purple-500/20 backdrop-blur-md border border-purple-400/50 text-purple-300 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-purple-500/30 transition-all duration-300">Photoshop</span>
+                        <span class="bg-indigo-500/20 backdrop-blur-md border border-indigo-400/50 text-indigo-300 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-indigo-500/30 transition-all duration-300">After Effects</span>
+                        <span class="bg-emerald-500/20 backdrop-blur-md border border-emerald-400/50 text-emerald-300 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-emerald-500/30 transition-all duration-300">Canva</span>
+                        <span class="bg-cyan-500/20 backdrop-blur-md border border-cyan-400/50 text-cyan-300 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-cyan-500/30 transition-all duration-300">UI/UX Design</span>
+                        <span class="bg-neonblue-500/20 backdrop-blur-md border border-neonblue-400/50 text-neonblue-300 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-neonblue-500/30 transition-all duration-300">HTML/CSS/JS/Tailwind</span>
+                    </div>
+                    <!-- Social Links: Reorganized + Fixed Logos (white, crisp) -->
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start items-center mt-12 pt-8 border-t border-gray-700/50">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/reyp.u" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 bg-gradient-to-r from-purple-600 to-neonblue-500 hover:from-purple-700 hover:to-neonblue-600 text-white font-bold py-4 px-8 rounded-3xl text-lg transition-all duration-400 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/40 shadow-lg border border-white/20">
+                            <i class="fab fa-instagram text-xl flex-shrink-0"></i>
+                            <span>reyp.u</span>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/ray-raharja-santoso-9a853b36b/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 bg-gradient-to-r from-blue-600 to-neonblue-500 hover:from-blue-700 hover:to-neonblue-600 text-white font-bold py-4 px-8 rounded-3xl text-lg transition-all duration-400 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/40 shadow-lg border border-white/20">
+                            <i class="fab fa-linkedin text-xl flex-shrink-0"></i>
+                            <span>Ray Raharja</span>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/6281381457516?text=Hello%20from%20Portfolio" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 bg-gradient-to-r from-emerald-500 to-neonblue-500 hover:from-emerald-600 hover:to-neonblue-600 text-white font-bold py-4 px-8 rounded-3xl text-lg transition-all duration-400 hover:scale-105 hover:shadow-2xl hover:shadow-emerald-500/40 shadow-lg border border-white/20">
+                            <i class="fab fa-whatsapp text-xl flex-shrink-0"></i>
+                            <span>0813-8145-7516</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
